@@ -18,7 +18,7 @@ module Blog::PostsHelper
   end
   
   def date_full(date)
-    l date.strftime('%A %B %d, %Y').gsub(/\s0/, ' ')
+    l(date, :format => '%A %B %d, %Y').gsub(/\s0/, ' ')
   end
 
 end
